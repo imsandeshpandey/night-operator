@@ -1,0 +1,31 @@
+{
+  "name": "night-operator-theme",
+  "displayName": "Night Operator Theme",
+  "description": "A customized Dark Theme with Operator Mono support for Visual Studio Code.",
+  "version": "0.0.1",
+  "publisher": "sandeshpandey",
+  "keywords": [
+    "theme",
+    "colors",
+    "vscode",
+    "dark",
+    "operator",
+    "night",
+    "moody"
+  ],
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Night Operator",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Night Operator-color-theme.json"
+      }
+    ]
+  }
+}
