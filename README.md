@@ -1,7 +1,6 @@
-<div style="display:flex; align-items:center; flex-direction:column">
-<h1 style="padding:0px; margin:0">Night Operator Theme</h1>
-<hr style="width:100%; height:1px">
-<h5 style="margin:auto;">A customized Dark Theme with Operator Mono support for Visual Studio Code.</h5>
+
+#Night Operator Theme
+####A customized Dark Theme with Operator Mono support for Visual Studio Code.
 </div>
 
 <br>
