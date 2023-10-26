@@ -3,7 +3,7 @@
   "displayName": "Night Operator Theme",
   "description": "A customized Dark Theme with Operator Mono support for Visual Studio Code.",
   "icon": "logo.png",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "sandeshpandey",
   "keywords": [
     "theme",
