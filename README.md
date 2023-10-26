@@ -1,7 +1,7 @@
 
-#Night Operator Theme
-####A customized Dark Theme with Operator Mono support for Visual Studio Code.
-</div>
+<h1>Night Operator Theme</h1>
+<h5>A customized Dark Theme with Operator Mono support for Visual Studio Code.</h5>
+
 
 <br>
 <br>
