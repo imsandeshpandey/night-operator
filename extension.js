@@ -1586,6 +1586,13 @@ const changeTheme = () => {
     .split(`${DEFAULT_COLORS.accent}`)
     .join(accent);
   fs.writeFileSync(THEME_PATH, newTheme);
+  const RELOAD = "Reload Window";
+  vscode.window
+    .showInformationMessage("Reload VS Code to see changes.", RELOAD)
+    .then((res) => {
+      res === RELOAD &&
+        vscode.commands.executeCommand("workbench.action.reloadWindow");
+    });
 };
 
 const createAccentTheme = () => {
@@ -1612,6 +1619,7 @@ const createAccentTheme = () => {
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
+  console.log(THEME_PATH);
   vscode.window.showInformationMessage("Night Operator Theme: Ready");
 
   const disposable = vscode.workspace.onDidChangeConfiguration(
