@@ -5,6 +5,10 @@
   "icon": "logo.png",
   "version": "0.0.6",
   "publisher": "sandeshpandey",
+  "main": "./extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "keywords": [
     "theme",
     "colors",
@@ -25,12 +29,58 @@
     "url": "git+https://github.com/imsandeshpandey/night-operator.git"
   },
   "contributes": {
+    "customEditors": [
+      {
+        "viewType": "vscode.settings",
+        "displayName": "Settings",
+        "selector": [
+          {
+            "filenamePattern": "*.json"
+          }
+        ]
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Night Operator Theme",
+        "properties": {
+          "nightOperatorTheme.backgroundColor": {
+            "type": "string",
+            "default": "#0f111a",
+            "description": "The color theme used for the Night Operator theme."
+          },
+          "nightOperatorTheme.accentColor": {
+            "type": "string",
+            "default": "#80cbc4",
+            "description": "Accent color for Night Operator Theme."
+          },
+          "nightOperatorTheme.accentTheme": {
+            "type": "boolean",
+            "default": false,
+            "description": "Generates new background color using the accent color."
+          },
+          "nightOperatorTheme.backgroundBrightness": {
+            "type": "number",
+            "default": 8,
+            "description": "Brightness of the background color."
+          }
+        }
+      }
+    ],
     "themes": [
       {
         "label": "Night Operator",
         "uiTheme": "vs-dark",
-        "path": "./themes/Night Operator-color-theme.json"
+        "path": "./themes/night-operator-color-theme.json"
       }
     ]
+  },
+  "dependencies": {
+    "color-convert": "^2.0.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
   }
 }
