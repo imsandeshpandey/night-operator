@@ -29,17 +29,6 @@
     "url": "git+https://github.com/imsandeshpandey/night-operator.git"
   },
   "contributes": {
-    "customEditors": [
-      {
-        "viewType": "vscode.settings",
-        "displayName": "Settings",
-        "selector": [
-          {
-            "filenamePattern": "*.json"
-          }
-        ]
-      }
-    ],
     "configuration": [
       {
         "title": "Night Operator Theme",

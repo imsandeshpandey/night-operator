@@ -1619,7 +1619,6 @@ const createAccentTheme = () => {
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-  console.log(THEME_PATH);
   vscode.window.showInformationMessage("Night Operator Theme: Ready");
 
   const disposable = vscode.workspace.onDidChangeConfiguration(
